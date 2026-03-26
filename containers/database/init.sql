@@ -8,10 +8,4 @@ CREATE DATABASE oed WITH OWNER oed;
 DROP DATABASE IF EXISTS oed_testing;
 CREATE DATABASE oed_testing WITH OWNER oed;
 
-\connect oed
-CREATE EXTENSION IF NOT EXISTS timescaledb;
-
-\connect oed_testing
-CREATE EXTENSION IF NOT EXISTS timescaledb;
-
 ALTER ROLE oed SUPERUSER;
